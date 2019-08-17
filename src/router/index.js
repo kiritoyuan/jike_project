@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import { PersistGate } from 'redux-persist/integration/react';
 import NotFound from '../pages/notFound';
 import Login from '../pages/login';
-// import Signup from '../pages/signup';
-// import Home from '../pages/home';
+import Signup from '../pages/signup';
+import Home from '../pages/home';
 // import CourseDetail from '../pages/courseDetail';
 // import configureStore from '../lib/redux';
 // const { store, persistor } = configureStore();
@@ -16,10 +16,10 @@ const AppRouter = () => (
       <BrowserRouter>
         <div>
           <Switch>
-            {/* <Route path="/" component={Home} exact />
-            <Route path="/courses/:id" component={CourseDetail} exact /> */}
+            <Route path="/" component={Home} exact />
+            {/* <Route path="/courses/:id" component={CourseDetail} exact /> */}
             <Route path="/login" component={Login} />
-            {/* <Route path="/signup" component={Signup} /> */}
+            <Route path="/signup" component={Signup} />
             <Route path="*" component={NotFound} />
           </Switch>
         </div>
